@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <welcome-file-list>
+    <welcome-file>loginAndRegister.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <!-- 注册servlet -->
+  <servlet>
+  	<servlet-name>UserServlet</servlet-name>
+  	<servlet-class>com.softeem.pp.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddAlbumServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.AddAlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PhotoUploadServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.PhotoUploadServlet</servlet-class>
+  	<init-param>
+  		<param-name>rootpath</param-name>
+  		<param-value>E:\AlbumManage\web\photos\</param-value>
+  	</init-param>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAlbumByUserServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.FindAlbumByUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdatePassWordServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.UpdatePassWordServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelAlbumServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.DelAlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowPhotoByAlbumServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.ShowPhotoByAlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DelPhotoServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.DelPhotoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowSinglePhotoServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.ShowSinglePhotoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindAlbumServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.FindAlbumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>QueryPhotoServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.QueryPhotoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <servlet-class>com.softeem.pp.servlet.ShowUserServlet</servlet-class>
+  </servlet>
+  <!--========================================================================-->
+  <servlet-mapping>
+  	<servlet-name>UserServlet</servlet-name>
+  	<url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddAlbumServlet</servlet-name>
+    <url-pattern>/AddAlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PhotoUploadServlet</servlet-name>
+    <url-pattern>/PhotoUploadServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAlbumByUserServlet</servlet-name>
+    <url-pattern>/FindAlbumByUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdatePassWordServlet</servlet-name>
+    <url-pattern>/UpdatePassWordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelAlbumServlet</servlet-name>
+    <url-pattern>/DelAlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowPhotoByAlbumServlet</servlet-name>
+    <url-pattern>/ShowPhotoByAlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DelPhotoServlet</servlet-name>
+    <url-pattern>/DelPhotoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowSinglePhotoServlet</servlet-name>
+    <url-pattern>/ShowSinglePhotoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindAlbumServlet</servlet-name>
+    <url-pattern>/FindAlbumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>QueryPhotoServlet</servlet-name>
+    <url-pattern>/QueryPhotoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowUserServlet</servlet-name>
+    <url-pattern>/ShowUserServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
